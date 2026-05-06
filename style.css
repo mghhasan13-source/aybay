@@ -1,0 +1,61 @@
+/* style.css */
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: #F8F9FA;
+    margin: 0;
+    padding-bottom: 80px;
+}
+
+.dashboard-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-top: 5px solid #3B82F6;
+}
+
+.feature-item {
+    background: white;
+    padding: 15px;
+    margin: 8px 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #E5E7EB;
+    transition: 0.3s;
+}
+
+.feature-item:active {
+    background: #F3F4F6;
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    background: #F3F4F6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4B5563;
+}
+
+.fab-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #3B82F6;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    border: none;
+    cursor: pointer;
+}
