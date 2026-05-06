@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আয় ব্যয় - হিসাব খাতা</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div style="background: #3B82F6; color: white; padding: 15px; font-weight: bold; font-size: 18px;">
+        ⚡ আয় ব্যয়
+    </div>
+
+    <div class="dashboard-card">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 15px; color: #666; font-size: 14px;">
+            <span>আজ</span> <span style="color: #3B82F6; border-bottom: 2px solid;">মে, ২০২৬</span> <span>মোট</span>
+        </div>
+        <div style="display: flex; justify-content: space-around; text-align: center;">
+            <div>
+                <div style="color: #10B981; font-size: 12px;">আয়</div>
+                <div id="total-income" style="font-weight: bold;">০</div>
+            </div>
+            <div>
+                <div style="color: #EF4444; font-size: 12px;">ব্যয়</div>
+                <div id="total-expense" style="font-weight: bold;">০</div>
+            </div>
+            <div>
+                <div style="color: #3B82F6; font-size: 12px;">ব্যালেন্স</div>
+                <div id="total-balance" style="font-weight: bold;">০</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="transaction-list">
+        </div>
+
+    <button class="fab-btn" onclick="addData()">+</button>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
