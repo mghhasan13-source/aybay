@@ -1,0 +1,20 @@
+name: Build Android APK
+on:
+  push:
+    branches:
+      - main  # আপনার মেইন ব্রাঞ্চের নাম অনুযায়ী পরিবর্তন করতে পারেন
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build APK using Website-to-APK Action
+        uses: valexsoft/W2A-Action@v1.0.0
+        with:
+          websiteUrl: "https://your-username.github.io/your-repo-name/" # আপনার লাইভ সাইটের ইউআরএল
+          appName: "HishabKhata"
+          packageName: "com.yourname.hishabkhata"
+          icon: "https://cdn-icons-png.flaticon.com/512/2845/2845944.png" # আইকনের লিংক
